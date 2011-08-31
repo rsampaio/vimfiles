@@ -1,5 +1,8 @@
-set go-=T
-set bg=dark
+if has("mac")
+    set go-=T
+    set bg=dark
+    set gfn=Monaco:h12
+endif
 
 "More informative statusbar
 :set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
@@ -74,8 +77,8 @@ let Tlist_Compact_Format=0
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_WinWidth = 28
-map <F5> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-map <S-esc> :TlistToggle<cr>
-map <C-esc> :NERDTreeToggle<CR>
+map <F5> :!/usr/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-esc> :TlistToggle<CR>
+map <S-esc> :NERDTreeToggle<CR>
 
-set gfn=Monaco:h12
+let NERDTreeIgnore=['\.pyc$', '\~$']
