@@ -23,14 +23,18 @@ set noautowrite               " don't automagically write on :next
 set showmode
 set showcmd
 set nocompatible              " vim, not vi
+set cursorline
+set showmatch
+set list
+set listchars=tab:>.
+
+call pathogen#infect()
+set foldmethod=marker
 
 filetype on                   " Enable filetype detection
 filetype indent on            " Enable filetype-specific indenting
 filetype plugin on            " Enable filetype-specific plugins
 compiler ruby                 " Enable compiler support for ruby
-
-"starts with NerdTree Opened
-"NERDTreeToggle
 
 colorscheme wombat
 
@@ -50,10 +54,6 @@ autocmd FileType php let php_htmlInStrings=1
 autocmd FileType php let php_noShortTags=1
 "autocmd FileType php let php_folding=1
 
-"object-j
-autocmd BufNewFile,BufRead *.j setf objj
-
-
 " Settings for taglist.vim
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
 let Tlist_Use_Right_Window=1
@@ -64,6 +64,6 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_WinWidth = 28
 map <F5> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-map <S-esc> :TlistToggle<cr>
-map <C-esc> :NERDTreeToggle<CR>
+map <C-esc> :TlistToggle<CR>
+map <S-esc> :NERDTreeToggle<CR>
 map <C-t> :CommandT<CR>
