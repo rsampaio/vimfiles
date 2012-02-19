@@ -1,7 +1,8 @@
 "Set magic on
 set magic
 syn on
-
+set t_Co=256
+set background=dark
 "More informative statusbar
 :set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
@@ -36,7 +37,8 @@ filetype indent on            " Enable filetype-specific indenting
 filetype plugin on            " Enable filetype-specific plugins
 compiler ruby                 " Enable compiler support for ruby
 
-colorscheme xoria256
+"colorscheme xoria256
+colorscheme solarized
 
 "highlight Cursor guifg=Black guibg=Red
 
