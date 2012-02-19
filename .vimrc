@@ -36,7 +36,7 @@ filetype indent on            " Enable filetype-specific indenting
 filetype plugin on            " Enable filetype-specific plugins
 compiler ruby                 " Enable compiler support for ruby
 
-colorscheme wombat
+colorscheme xoria256
 
 "highlight Cursor guifg=Black guibg=Red
 
