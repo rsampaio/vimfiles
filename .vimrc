@@ -68,7 +68,6 @@ let Tlist_WinWidth = 28
 map <F5> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <C-esc> :TlistToggle<CR>
 map <S-esc> :NERDTreeToggle<CR>
-map <C-t> :CommandT<CR>
 
 nnoremap <silent> <C-S> :if expand("%") == ""<CR>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
 imap <C-s> <C-o><c-s>
