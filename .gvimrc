@@ -1,7 +1,7 @@
 if has("mac")
     set go-=T
     set bg=dark
-    set gfn=Monaco:h12
+    set gfn=Terminus:h12
 endif
 
 source ~/.vimrc

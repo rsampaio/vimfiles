@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/rsampaio/Code/vimfiles/.vim/autoload'
 let g:netrw_dirhist_2='/Users/rsampaio/Code/locaweb/conductor'
 let g:netrw_dirhist_3='/home/rodrigo/Code/locaweb/conductor/conductor_master'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/rodrigo/Code/pydhcpserver'
 let g:netrw_dirhist_6='/home/rodrigo/.config/awesome/themes'
 let g:netrw_dirhist_7='/home/rodrigo/.PlayOnLinux/configurations'
 let g:netrw_dirhist_8='/home/rodrigo/.PlayOnLinux/configurations/configurators'
+let g:netrw_dirhist_9='/home/rodrigo/Code/locaweb/backup_controller/.bundle'
