@@ -37,7 +37,8 @@ filetype indent on            " Enable filetype-specific indenting
 filetype plugin on            " Enable filetype-specific plugins
 compiler ruby                 " Enable compiler support for ruby
 
-colorscheme xoria256
+colorscheme Tomorrow-Night-Eighties
+"colorscheme xoria256
 "colorscheme solarized
 
 "highlight Cursor guifg=Black guibg=Red
